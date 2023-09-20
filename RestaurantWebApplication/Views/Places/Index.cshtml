@@ -1,0 +1,53 @@
+﻿@model IEnumerable<RestaurantWebApplication.Models.Place>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>@ViewBag.TypeName places</h1>
+
+<p>
+    <a asp-action="Create" asp-route-id="@ViewBag.TypeId">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AverageBill)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OpenTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CloseTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AverageBill)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OpenTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CloseTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

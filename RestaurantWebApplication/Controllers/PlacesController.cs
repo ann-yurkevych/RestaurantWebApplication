@@ -63,7 +63,7 @@ namespace RestaurantWebApplication.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(int TypeId, [Bind("AverageBill,OpenTime,CloseTime,Location")] Place place)
+        public async Task<IActionResult> Create(int TypeId, [Bind("Name,AverageBill,OpenTime,CloseTime,Location")] Place place)
         {
             place.TypeId = TypeId;
             if (ModelState.IsValid)
@@ -90,7 +90,7 @@ namespace RestaurantWebApplication.Controllers
             {
                 return NotFound();
             }
-            ViewData["TypeId"] = new SelectList(_context.Types, "Id", "Id", place.TypeId);
+            ViewData["TypeId"] = _context.Types.ToList();
             return View(place);
         }
 
@@ -99,34 +99,39 @@ namespace RestaurantWebApplication.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,TypeId,AverageBill,OpenTime,CloseTime,Location")] Place place)
+        public async Task<IActionResult> Edit(int id, string TypeName, [Bind("Id,Name,AverageBill,OpenTime,CloseTime,Location")] Place place)
         {
+            var type = _context.Types.FirstOrDefault(t => t.Name == TypeName);
             if (id != place.Id)
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            if(type != null)
             {
-                try
+                place.TypeId = type.Id;
+                if (ModelState.IsValid)
                 {
-                    _context.Update(place);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PlaceExists(place.Id))
+                    try
                     {
-                        return NotFound();
+                        _context.Update(place);
+                        await _context.SaveChangesAsync();
                     }
-                    else
+                    catch (DbUpdateConcurrencyException)
                     {
-                        throw;
+                        if (!PlaceExists(place.Id))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
                     }
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["TypeId"] = new SelectList(_context.Types, "Id", "Id", place.TypeId);
+
+            ViewData["TypeId"] = _context.Types.ToList();
             return View(place);
         }
 

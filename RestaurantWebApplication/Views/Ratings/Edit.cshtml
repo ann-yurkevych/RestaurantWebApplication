@@ -14,14 +14,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <label asp-for="PlaceId" class="control-label"></label>
-                <select asp-for="PlaceId" class="form-control" asp-items="ViewBag.PlaceId"></select>
-                <span asp-validation-for="PlaceId" class="text-danger"></span>
+                <label asp-for="Place" class="control-label"></label>
+                <input id="placeName" name="PlaceName" class="form-control" />
             </div>
             <div class="form-group">
-                <label asp-for="ClientId" class="control-label"></label>
-                <select asp-for="ClientId" class="form-control" asp-items="ViewBag.ClientId"></select>
-                <span asp-validation-for="ClientId" class="text-danger"></span>
+                <label asp-for="Client" class="control-label"></label>
+                <input id="clientName" name="ClientName" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="Score" class="control-label"></label>
@@ -41,4 +39,32 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <script>
+            let data = @Html.Raw(Json.Serialize(ViewData["ClientId"]));
+                var names = [];
+                data.forEach(type => {
+                    names.push(type.name);
+                })
+                console.log(names);
+                $( function() {
+                    $( "#clientName" ).autocomplete({
+                        source: names,
+                        minLength: 3
+                    });
+                });
+        </script>
+            <script>
+                    let placeData = @Html.Raw(Json.Serialize(ViewData["PlaceId"]));
+                        var placeNames = [];
+                        placeData.forEach(type => {
+                            placeNames.push(type.name);
+                    })
+                    console.log(names);
+                    $( function() {
+                        $( "#placeName" ).autocomplete({
+                                source: placeNames,
+                            minLength: 3
+                        });
+                    });
+            </script>
 }

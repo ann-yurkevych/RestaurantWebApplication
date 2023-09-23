@@ -9,6 +9,8 @@ public partial class Place
 
     public int TypeId { get; set; }
 
+    public string Name { get; set; } = null!;
+
     public double AverageBill { get; set; }
 
     public string OpenTime { get; set; }

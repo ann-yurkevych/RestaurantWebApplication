@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using RestaurantWebApplication.Models;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 

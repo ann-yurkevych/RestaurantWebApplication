@@ -48,8 +48,8 @@ namespace RestaurantWebApplication.Controllers
         // GET: Ratings/Create
         public IActionResult Create()
         {
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Name");
-            ViewData["PlaceId"] = new SelectList(_context.Places, "Id", "Location");
+            ViewData["ClientId"] = _context.Clients.ToList();
+            ViewData["PlaceId"] = _context.Places.ToList();
             return View();
         }
 
@@ -58,16 +58,23 @@ namespace RestaurantWebApplication.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,PlaceId,ClientId,Score")] Rating rating)
+        public async Task<IActionResult> Create(string ClientName, string PlaceName, [Bind("Id,PlaceId,Score")] Rating rating)
         {
-            if (ModelState.IsValid)
+            var client = _context.Clients.FirstOrDefault(c => c.Name == ClientName);
+            var place = _context.Places.FirstOrDefault(p => p.Name == PlaceName);
+            if(client != null && place != null)
             {
-                _context.Add(rating);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                rating.ClientId = client.Id;
+                rating.PlaceId = place.Id;
+                if (ModelState.IsValid)
+                {
+                    _context.Add(rating);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
             }
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Name", rating.ClientId);
-            ViewData["PlaceId"] = new SelectList(_context.Places, "Id", "Location", rating.PlaceId);
+            ViewData["ClientId"] = _context.Clients.ToList();
+            ViewData["PlaceId"] = _context.Places.ToList();
             return View(rating);
         }
 
@@ -84,8 +91,8 @@ namespace RestaurantWebApplication.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Id", rating.ClientId);
-            ViewData["PlaceId"] = new SelectList(_context.Places, "Id", "Id", rating.PlaceId);
+            ViewData["ClientId"] = _context.Clients.ToList();
+            ViewData["PlaceId"] = _context.Places.ToList();
             return View(rating);
         }
 
@@ -94,35 +101,41 @@ namespace RestaurantWebApplication.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,PlaceId,ClientId,Score")] Rating rating)
+        public async Task<IActionResult> Edit(int id, string ClientName, string PlaceName, [Bind("Id,PlaceId,Score")] Rating rating)
         {
+            var client = _context.Clients.FirstOrDefault(c => c.Name == ClientName);
+            var place = _context.Places.FirstOrDefault(p => p.Name == PlaceName);
             if (id != rating.Id)
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
+            if (client != null && place != null)
             {
-                try
+                rating.ClientId = client.Id;
+                rating.PlaceId = place.Id;
+                if (ModelState.IsValid)
                 {
-                    _context.Update(rating);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!RatingExists(rating.Id))
+                    try
                     {
-                        return NotFound();
+                        _context.Update(rating);
+                        await _context.SaveChangesAsync();
                     }
-                    else
+                    catch (DbUpdateConcurrencyException)
                     {
-                        throw;
+                        if (!RatingExists(rating.Id))
+                        {
+                            return NotFound();
+                        }
+                        else
+                        {
+                            throw;
+                        }
                     }
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Id", rating.ClientId);
-            ViewData["PlaceId"] = new SelectList(_context.Places, "Id", "Id", rating.PlaceId);
+            ViewData["ClientId"] = _context.Clients.ToList();
+            ViewData["PlaceId"] = _context.Places.ToList();
             return View(rating);
         }
 

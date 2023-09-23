@@ -197,54 +197,6 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
-    },
-    {
-      "Id": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RestaurantWebApplication.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

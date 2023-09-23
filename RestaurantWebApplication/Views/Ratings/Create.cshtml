@@ -1,4 +1,7 @@
-﻿@model RestaurantWebApplication.Models.Rating
+﻿@using System.Text.Json;
+@using System.Net;
+
+@model RestaurantWebApplication.Models.Rating
 
 @{
     ViewData["Title"] = "Create";
@@ -14,11 +17,11 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Place" class="control-label"></label>
-                <select asp-for="PlaceId" class ="form-control" asp-items="ViewBag.PlaceId"></select>
+                <input id="placeName" name="PlaceName" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="Client" class="control-label"></label>
-                <select asp-for="ClientId" class ="form-control" asp-items="ViewBag.ClientId"></select>
+                <input id="clientName" name="ClientName" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="Score" class="control-label"></label>
@@ -38,4 +41,30 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        let data = @Html.Raw(JsonSerializer.Serialize(ViewData["ClientId"]));
+        var names = [];
+        data.forEach(client => {
+            names.push(client.Name);
+        })
+        $( function() {
+            $( "#clientName" ).autocomplete({
+                source: names,
+                minLength: 3
+            });
+        });
+    </script>
+                <script>
+                    let placeData = @Html.Raw(Json.Serialize(ViewData["PlaceId"]));
+                    var placeNames = [];
+                    placeData.forEach(type => {
+                                placeNames.push(type.name);
+                        })
+                        $( function() {
+                            $( "#placeName" ).autocomplete({
+                                    source: placeNames,
+                                minLength: 3
+                            });
+                        });
+                </script>
 }

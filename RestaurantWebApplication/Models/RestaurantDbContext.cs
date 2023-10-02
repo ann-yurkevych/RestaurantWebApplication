@@ -13,6 +13,7 @@ public partial class RestaurantDbContext : DbContext
     public RestaurantDbContext(DbContextOptions<RestaurantDbContext> options)
         : base(options)
     {
+        Database.EnsureCreated();
     }
 
     public virtual DbSet<Client> Clients { get; set; }

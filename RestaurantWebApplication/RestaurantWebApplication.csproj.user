@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>RestaurantWebApplication.Models.RestaurantDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\AnnYurkevych\RestaurantWebApplication\.github\workflows\RestaurantWebApplication.yml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

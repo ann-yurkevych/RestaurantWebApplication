@@ -9,117 +9,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RestaurantWebApplication
 build_property.RootNamespace = RestaurantWebApplication
-build_property.ProjectDir = C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication\
+build_property.ProjectDir = C:\Main\University\WEB\+\Ann Yurkevych\RestaurantWebApplication\RestaurantWebApplication\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication
+build_property.MSBuildProjectDirectory = C:\Main\University\WEB\+\Ann Yurkevych\RestaurantWebApplication\RestaurantWebApplication
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Create.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Delete.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Details.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Edit.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Index.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Home/Index.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Favourites/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Favourites/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Favourites/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Favourites/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Favourites/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3VyaXRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Home/Privacy.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Create.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Delete.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Details.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Edit.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Index.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Places/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Create.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Delete.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Details.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Edit.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Index.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Ratings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/Error.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Create.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Delete.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Details.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Edit.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Index.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Types/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/_ViewImports.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/_ViewStart.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/AnnYurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/_Layout.cshtml]
+[C:/Main/University/WEB/+/Ann Yurkevych/RestaurantWebApplication/RestaurantWebApplication/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lvj41k2nxd

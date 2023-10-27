@@ -24,23 +24,49 @@ public partial class RestaurantDbContext : DbContext
 
     public virtual DbSet<Type> Types { get; set; }
 
+    public virtual DbSet<Favourite> Favourites { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Client>(entity =>
         {
-            entity.Property(e => e.Name).HasMaxLength(50);
-            entity.Property(e => e.Surname).HasMaxLength(50);
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+            entity.Property(e => e.Surname)
+                .IsRequired()
+                .HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<Favourite>(entity =>
+        {
+            entity.HasOne(d => d.Client).WithMany(p => p.Favourites)
+                .HasForeignKey(d => d.ClientId)
+                .HasConstraintName("FK_Favourites_Clients");
+
+            entity.HasOne(d => d.Place).WithMany(p => p.Favourites)
+                .HasForeignKey(d => d.PlaceId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Favourites_Places");
         });
 
         modelBuilder.Entity<Place>(entity =>
         {
-            entity.Property(e => e.CloseTime).HasMaxLength(8);
-            entity.Property(e => e.OpenTime).HasMaxLength(8);
-            entity.Property(e => e.Location).HasMaxLength(100);
+            entity.Property(e => e.CloseTime)
+                .IsRequired()
+                .HasMaxLength(8);
+            entity.Property(e => e.Location)
+                .IsRequired()
+                .HasMaxLength(100);
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+            entity.Property(e => e.OpenTime)
+                .IsRequired()
+                .HasMaxLength(8);
 
             entity.HasOne(d => d.Type).WithMany(p => p.Places)
                 .HasForeignKey(d => d.TypeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Places_Types");
         });
 
@@ -48,7 +74,6 @@ public partial class RestaurantDbContext : DbContext
         {
             entity.HasOne(d => d.Client).WithMany(p => p.Ratings)
                 .HasForeignKey(d => d.ClientId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Ratings_Clients");
 
             entity.HasOne(d => d.Place).WithMany(p => p.Ratings)
@@ -61,7 +86,9 @@ public partial class RestaurantDbContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PK_Type");
 
-            entity.Property(e => e.Name).HasMaxLength(50);
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(50);
         });
 
         OnModelCreatingPartial(modelBuilder);

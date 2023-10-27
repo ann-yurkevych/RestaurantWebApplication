@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AnnYurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj": {}
+    "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj": {}
   },
   "projects": {
-    "C:\\AnnYurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj": {
+    "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AnnYurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
+        "projectUniqueName": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
         "projectName": "RestaurantWebApplication",
-        "projectPath": "C:\\AnnYurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
-        "packagesPath": "C:\\Users\\Hanna's PC\\.nuget\\packages\\",
-        "outputPath": "C:\\AnnYurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\obj\\",
+        "projectPath": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
+        "packagesPath": "C:\\Users\\Denis\\.nuget\\packages\\",
+        "outputPath": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hanna's PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Denis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

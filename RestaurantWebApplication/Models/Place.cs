@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace RestaurantWebApplication.Models;
 
@@ -19,7 +20,10 @@ public partial class Place
 
     public string Location { get; set; } = null!;
 
+    [JsonIgnore]
     public virtual ICollection<Rating> Ratings { get; set; } = new List<Rating>();
+    [JsonIgnore]
+    public virtual ICollection<Favourite> Favourites { get; set; } = new List<Favourite>();
 
     public virtual Type Type { get; set; } = null!;
 }

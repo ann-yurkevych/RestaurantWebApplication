@@ -45,7 +45,7 @@
         let data = @Html.Raw(JsonSerializer.Serialize(ViewData["ClientId"]));
         var names = [];
         data.forEach(client => {
-            names.push(client.Name);
+            names.push(client.name);
         })
         $( function() {
             $( "#clientName" ).autocomplete({

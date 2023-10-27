@@ -1,0 +1,66 @@
+﻿@model RestaurantWebApplication.Models.Favourite
+@using Microsoft.AspNetCore.Mvc;
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Favourite</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PlaceId" class="control-label">Place</label>
+                <input id="placeName" name="PlaceName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientId" class="control-label">Client</label>
+                <input id="clientName" name="ClientName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+        <script>
+            let data = @Html.Raw(Json.Serialize(ViewData["ClientId"]));
+            console.log(data);
+            var names = [];
+            data.forEach(client => {
+                names.push(client.name);
+            })
+            $( function() {
+                $( "#clientName" ).autocomplete({
+                    source: names,
+                    minLength: 3
+                });
+            });
+        </script>
+                    <script>
+                        let placeData = @Html.Raw(Json.Serialize(ViewData["PlaceId"]));
+                        var placeNames = [];
+                        placeData.forEach(type => {
+                                    placeNames.push(type.name);
+                            })
+                            $( function() {
+                                $( "#placeName" ).autocomplete({
+                                        source: placeNames,
+                                    minLength: 3
+                                });
+                            });
+                    </script>
+}

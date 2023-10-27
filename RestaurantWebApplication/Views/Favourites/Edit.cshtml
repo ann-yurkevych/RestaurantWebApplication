@@ -1,0 +1,63 @@
+﻿@model RestaurantWebApplication.Models.Favourite
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Favourite</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="PlaceId" class="control-label"></label>
+                <input id="placeName" name="PlaceName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ClientId" class="control-label"></label>
+                <input id="clientName" name="ClientName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        <script>
+                let data = @Html.Raw(Json.Serialize(ViewData["ClientId"]));
+                var names = [];
+                data.forEach(type => {
+                    names.push(type.name);
+                })
+                $( function() {
+                    $( "#clientName" ).autocomplete({
+                        source: names,
+                        minLength: 3
+                    });
+                });
+        </script>
+            <script>
+                        let placeData = @Html.Raw(Json.Serialize(ViewData["PlaceId"]));
+                        var placeNames = [];
+                        placeData.forEach(type => {
+                            placeNames.push(type.name);
+                    })
+                    $( function() {
+                        $( "#placeName" ).autocomplete({
+                                source: placeNames,
+                            minLength: 3
+                        });
+                    });
+            </script>
+}

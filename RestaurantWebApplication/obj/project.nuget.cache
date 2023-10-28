@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CDGc6xu2j3qThuAS6aofgOmOSFAS6k6ak+Zviq2MZdlFNkdJ70Sll1WqOmZ/VZaABFDEUX9xuvAiYj0Gjil8Rg==",
+  "dgSpecHash": "BRbJ1WZFAmIRCVp64wQy+pX2DmU77XJvZBAQ16Z/+GMr0VJxg1Vn8Zb7+fxhp9TfcR+1YN1uAsXypVQXJn6lcQ==",
   "success": true,
   "projectFilePath": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
   "expectedPackageFiles": [
@@ -134,6 +134,7 @@
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.projectmodel\\6.6.1\\nuget.projectmodel.6.6.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

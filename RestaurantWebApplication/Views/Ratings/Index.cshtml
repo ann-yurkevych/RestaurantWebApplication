@@ -1,47 +1,85 @@
 ﻿@model IEnumerable<RestaurantWebApplication.Models.Rating>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Landing Page";
 }
 
-<h1>Ratings</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Score)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Client)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Place)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Score)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Client.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Place.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .container {
+            margin-top: 20px;
+        }
+
+        .table {
+            background-color: #fff;
+        }
+
+        .contact-section {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 220px;
+            padding: 10px;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section h3 {
+            font-size: 20px;
+        }
+
+        .contact-section p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>@ViewBag.TypeName Ratings</h1>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Client</th>
+                            <th>Place</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.Score)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Client.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Place.Name)</td>
+                                <td>
+                                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p>Address: Kyiv, Sechenova 6</p>
+                <p>Email: info@ukr.net</p>
+                <p>Phone: +380675432121</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

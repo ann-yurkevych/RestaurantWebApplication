@@ -1104,3 +1104,4 @@ C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication\obj\Debug\net7
 C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication\obj\Debug\net7.0\RestaurantWebApplication.pdb
 C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication\obj\Debug\net7.0\RestaurantWebApplication.genruntimeconfig.cache
 C:\AnnYurkevych\RestaurantWebApplication\RestaurantWebApplication\obj\Debug\net7.0\ref\RestaurantWebApplication.dll
+C:\Main\University\WEB\+\Ann Yurkevych\RestaurantWebApplication\RestaurantWebApplication\bin\Debug\net7.0\RestSharp.dll

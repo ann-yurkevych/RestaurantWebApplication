@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[7.0.10, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[105.2.3, )"
+            },
             "popper.js": {
               "target": "Package",
               "version": "[1.16.1, )"

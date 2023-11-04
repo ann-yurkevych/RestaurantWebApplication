@@ -5,16 +5,19 @@ using RestaurantWebApplication.Models;
 using RestSharp;
 using System.Diagnostics;
 using System.Net;
+using RestaurantWebApplication.RabbitMQ;
 
 namespace RestaurantWebApplication.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRabbitMqService _rabbitMqService;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _rabbitMqService = new RabbitMQService();
         }
 
         public ActionResult GoogleLoginCallback(string code)
@@ -66,6 +69,7 @@ namespace RestaurantWebApplication.Controllers
             {
                 ViewBag.Logged = "Not logged In";
             }
+            _rabbitMqService.SendMessage(ViewBag.Logged);
             return View();
         }
 

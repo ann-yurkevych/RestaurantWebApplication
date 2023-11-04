@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Ge1sM4dh+IAsORZrgepTJ8MbmD6Vzv8Zvi3mh1z7FIwjWw1aFcl+y96MwKyntIrNMY5zdHNT8N7MuqXIsiFdA==",
+  "success": true,
+  "projectFilePath": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RabbitMQConsole\\RabbitMQConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Denis\\.nuget\\packages\\rabbitmq.client\\6.6.0\\rabbitmq.client.6.6.0.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Denis\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

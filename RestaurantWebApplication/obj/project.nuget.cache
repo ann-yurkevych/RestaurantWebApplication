@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tKxTb9bQBHzwUNv/c9X1NV7riPSkZPNTKycP23KQH747jK/pfbawbsIaQ6WGCB/P1wpFj0xCWAckZq+y6kQrxA==",
+  "dgSpecHash": "BRbJ1WZFAmIRCVp64wQy+pX2DmU77XJvZBAQ16Z/+GMr0VJxg1Vn8Zb7+fxhp9TfcR+1YN1uAsXypVQXJn6lcQ==",
   "success": true,
   "projectFilePath": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\RestaurantWebApplication.csproj",
   "expectedPackageFiles": [
@@ -135,7 +135,6 @@
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512",
-    "C:\\Users\\Denis\\.nuget\\packages\\restsharp\\105.2.3\\restsharp.105.2.3.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -237,16 +236,5 @@
     "C:\\Users\\Denis\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Denis\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Пакет \"RestSharp 105.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "libraryId": "RestSharp",
-      "targetGraphs": [
-        "net7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -42,7 +42,6 @@
           "Microsoft.EntityFrameworkCore.Tools": "7.0.11",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.10",
-          "RestSharp": "105.2.3",
           "popper.js": "1.16.1",
           "Microsoft.AspNetCore.Antiforgery": "7.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "7.0.0.0",
@@ -2221,17 +2220,6 @@
         }
       },
       "popper.js/1.16.1": {},
-      "RestSharp/105.2.3": {
-        "runtime": {
-          "lib/net46/RestSharp.dll": {
-            "assemblyVersion": "105.2.3.0",
-            "fileVersion": "105.2.3.0"
-          }
-        },
-        "compile": {
-          "lib/net46/RestSharp.dll": {}
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -5806,13 +5794,6 @@
       "sha512": "sha512-6GiVZho0vwBnId7pK7NLTjMGq4F0/VE65I08CCeKlarVoUt1w8SGTtJmhNo/0pK38EGUP/xbT4+OkWB8UTMPBw==",
       "path": "popper.js/1.16.1",
       "hashPath": "popper.js.1.16.1.nupkg.sha512"
-    },
-    "RestSharp/105.2.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aR2Td2s7DUHSk+H3EdcJ7pAju3JLYUZMwWmkVNtiEl4pAQuQCnU218YMMAdPbTdw0PJnGqLwrJxWr1RdL4ADeQ==",
-      "path": "restsharp/105.2.3",
-      "hashPath": "restsharp.105.2.3.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J0Nls8DTXKM6e0hyotusXp4U5ZyZiKcKQwuU7ixUi8w=",
+  "Hash": "nvXHVTUKiXo9aJZjVZOolm3q8Iw6oAzFZ0w5qQ0YDYs=",
   "Source": "RestaurantWebApplication",
   "BasePath": "_content/RestaurantWebApplication",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RestaurantWebApplication.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\36a0dcbedce59195e715de5d2575be75.jpg",
+      "SourceId": "RestaurantWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\",
+      "BasePath": "_content/RestaurantWebApplication",
+      "RelativePath": "36a0dcbedce59195e715de5d2575be75.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\36a0dcbedce59195e715de5d2575be75.jpg"
     },
     {
       "Identity": "C:\\Main\\University\\WEB\\+\\Ann Yurkevych\\RestaurantWebApplication\\RestaurantWebApplication\\wwwroot\\css\\site.css",

@@ -47,6 +47,7 @@ namespace RestaurantWebApplication.Controllers
                 return NotFound();
             }
 
+            ViewData["ClientRatings"] = _context.Ratings.Where(rating => rating.PlaceId == id).Include(rating => rating.Client).ToList();
             return View(place);
         }
 

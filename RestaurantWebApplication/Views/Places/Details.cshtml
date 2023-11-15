@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Place";
-    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -23,6 +22,9 @@
 
         .main-content {
             padding: 20px;
+        }
+        .client-ratings {
+            display: inline-block;
         }
     </style>
 </head>
@@ -56,6 +58,23 @@
                     <dd class="col-sm-8">@Model.Type.Id</dd>
                 </dl>
             </div>
+            <table class="table table-striped client-ratings">
+                <thead>
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @foreach (var rating in ViewData["ClientRatings"] as List<Rating>)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => rating.Client.Name)</td>
+                                <td>@Html.DisplayFor(modelItem => rating.Score)</td>
+                            </tr>
+                        }
+                </tbody>
+            </table>
         </div>
 
         <div class="mt-4">

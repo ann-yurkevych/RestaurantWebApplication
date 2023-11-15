@@ -6,24 +6,32 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RestaurantWebApplication.Models;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace RestaurantWebApplication.Controllers
 {
     public class TypesController : Controller
     {
         private readonly RestaurantDbContext _context;
+        private readonly IMemoryCache _cache;
 
-        public TypesController(RestaurantDbContext context)
+        public TypesController(RestaurantDbContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         // GET: Types
         public async Task<IActionResult> Index()
         {
-              return _context.Types != null ? 
-                          View(await _context.Types.ToListAsync()) :
-                          Problem("Entity set 'RestaurantDbContext.Types'  is null.");
+            var types = await _cache.GetOrCreateAsync("Types", async entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10);
+
+                return await _context.Types.ToListAsync();
+            });
+
+            return View(types);
         }
 
         // GET: Types/Details/5

@@ -29,10 +29,10 @@ namespace RestaurantWebApplication.Controllers
                 ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
                 request.AddParameter("grant_type", "authorization_code");
                 request.AddParameter("code", code);
-                request.AddParameter("redirect_uri", "https://localhost:7293/Home/GoogleLoginCallback");
+                request.AddParameter("redirect_uri", "http://localhost:5135/Home/GoogleLoginCallback");
 
-                request.AddParameter("client_id", "Enter your clientid here");
-                request.AddParameter("client_secret", "Enter your client secret");
+                request.AddParameter("client_id", "147887041353-ilmsu6aufneio7fuc1rql5idsadmfh9n.apps.googleusercontent.com");
+                request.AddParameter("client_secret", "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");
 
                 IRestResponse response = client.Execute(request);
                 var content = response.Content;

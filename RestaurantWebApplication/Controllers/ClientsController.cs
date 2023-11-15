@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using RestaurantWebApplication.Models;
 
 namespace RestaurantWebApplication.Controllers
@@ -12,18 +13,25 @@ namespace RestaurantWebApplication.Controllers
     public class ClientsController : Controller
     {
         private readonly RestaurantDbContext _context;
+        private readonly IMemoryCache _cache;
 
-        public ClientsController(RestaurantDbContext context)
+        public ClientsController(RestaurantDbContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         // GET: Clients
         public async Task<IActionResult> Index()
         {
-              return _context.Clients != null ? 
-                          View(await _context.Clients.ToListAsync()) :
-                          Problem("Entity set 'RestaurantDbContext.Clients'  is null.");
+            var clients = await _cache.GetOrCreateAsync("Clients", async entry =>
+            {
+                entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10); // Cache for 10 minutes
+
+                return await _context.Clients.ToListAsync();
+            });
+
+            return View(clients);
         }
 
         // GET: Clients/Details/5

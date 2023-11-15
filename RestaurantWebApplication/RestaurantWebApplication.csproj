@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <None Include="web.config" />
+    <None Include="wwwroot\36a0dcbedce59195e715de5d2575be75.jpg" />
   </ItemGroup>
 
 </Project>

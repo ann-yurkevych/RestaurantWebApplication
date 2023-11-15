@@ -5,8 +5,10 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<RestaurantDbContext>(option => option.UseSqlServer(
-    builder.Configuration.GetConnectionString("DefaultConnectionAzure")
+    builder.Configuration.GetConnectionString("DefaultConnection")
 ));
+
+builder.Services.AddMemoryCache();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

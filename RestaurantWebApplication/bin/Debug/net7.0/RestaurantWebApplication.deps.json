@@ -42,7 +42,6 @@
           "Microsoft.EntityFrameworkCore.Tools": "7.0.11",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.10",
-          "RabbitMQ.Client": "6.6.0",
           "RestSharp": "105.2.3",
           "popper.js": "1.16.1",
           "Microsoft.AspNetCore.Antiforgery": "7.0.0.0",
@@ -314,7 +313,7 @@
           "System.Text.Encodings.Web.Reference": "7.0.0.0",
           "System.Text.Json.Reference": "7.0.0.0",
           "System.Text.RegularExpressions.Reference": "7.0.0.0",
-          "System.Threading.Channels.Reference": "7.0.0.0",
+          "System.Threading.Channels": "7.0.0.0",
           "System.Threading.Reference": "7.0.0.0",
           "System.Threading.Overlapped": "7.0.0.0",
           "System.Threading.RateLimiting": "7.0.0.0",
@@ -2222,21 +2221,6 @@
         }
       },
       "popper.js/1.16.1": {},
-      "RabbitMQ.Client/6.6.0": {
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Threading.Channels": "7.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.6.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {}
-        }
-      },
       "RestSharp/105.2.3": {
         "runtime": {
           "lib/net46/RestSharp.dll": {
@@ -3049,7 +3033,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Threading.Channels/7.0.0": {},
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -4737,7 +4720,7 @@
         },
         "compileOnly": true
       },
-      "System.Threading.Channels.Reference/7.0.0.0": {
+      "System.Threading.Channels/7.0.0.0": {
         "compile": {
           "System.Threading.Channels.dll": {}
         },
@@ -5824,13 +5807,6 @@
       "path": "popper.js/1.16.1",
       "hashPath": "popper.js.1.16.1.nupkg.sha512"
     },
-    "RabbitMQ.Client/6.6.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-klht0KBLO7xs/uIn8uejq1VC5wJJ8dHJSm2GmFmJHWQnFzWK5YTNUta6IrnuzitR1T5psxIuqwdQqalbTLPtcA==",
-      "path": "rabbitmq.client/6.6.0",
-      "hashPath": "rabbitmq.client.6.6.0.nupkg.sha512"
-    },
     "RestSharp/105.2.3": {
       "type": "package",
       "serviceable": true,
@@ -6488,13 +6464,6 @@
       "sha512": "sha512-VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
       "path": "system.threading/4.3.0",
       "hashPath": "system.threading.4.3.0.nupkg.sha512"
-    },
-    "System.Threading.Channels/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qmeeYNROMsONF6ndEZcIQ+VxR4Q/TX/7uIVLJqtwIWL7dDWeh0l1UIqgo4wYyjG//5lUNhwkLDSFl+pAWO6oiA==",
-      "path": "system.threading.channels/7.0.0",
-      "hashPath": "system.threading.channels.7.0.0.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
@@ -7890,7 +7859,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Threading.Channels.Reference/7.0.0.0": {
+    "System.Threading.Channels/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
